@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "Solution::spfa(int, int*):main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "dist[v]">
+            </PersistentString>
+            <PersistentString
+               value = "dist[u]">
+            </PersistentString>
+            <PersistentString
+               value = "i">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Solution::cutOffTree(std::__1::vector&lt;std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt; &gt; &gt;&amp;):main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "ny">
+            </PersistentString>
+            <PersistentString
+               value = "ans">
+            </PersistentString>
+            <PersistentString
+               value = "nx">
+            </PersistentString>
+            <PersistentString
+               value = "dis">
+            </PersistentString>
+            <PersistentString
+               value = "h">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "Solution::dfs(int):main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "aaa">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Solution::find():main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "tim">
+            </PersistentString>
+            <PersistentString
+               value = "ans">
+            </PersistentString>
+            <PersistentString
+               value = "zy">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Solution::nextClosestTime(std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;):main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "ans">
+            </PersistentString>
+            <PersistentString
+               value = "zy">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
