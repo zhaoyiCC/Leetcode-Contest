@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1508686640 source:/home/zhaoyi/Documents/LeetCode Contest 55/A/main.cpp
+	<iostream>
+	<cstdio>
+	<cstring>
+	<string>
+	<map>
+	<iostream>
+	<cmath>
+	<vector>
+	<set>
+	<algorithm>
+	<queue>
+

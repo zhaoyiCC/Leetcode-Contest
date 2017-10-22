@@ -1,0 +1,93 @@
+//
+//  main.cpp
+//  D
+//
+//  Created by ohazyi on 2017/10/2.
+//  Copyright © 2017年 ohazyi. All rights reserved.
+//
+
+#include <iostream>
+#include <cstdio>
+#include <cstring>
+#include <string>
+#include <map>
+#include <iostream>
+#include <cmath>
+#include <vector>
+#include <set>
+#include <algorithm>
+#include <queue>
+
+
+
+using namespace std;
+
+
+#define rep2(i,a,b) for (int i = (b); i >= (a); --i)
+class Solution {
+public:
+    #define rep(i,a,b) for (int i = (a); i <= (b); ++i)
+    typedef long long ll;
+    int maxProfit(vector<int>& prices, int fee) {
+        int f[60010][2], i;
+        f[0][0] = -1e9;
+        f[0][1] = 0;
+        rep (i,1,(int)prices.size()) {
+            f[i][0] = max(f[i-1][0], f[i-1][1] - prices[i-1]);  // buy
+            f[i][1] = max(f[i-1][1], f[i-1][0] + prices[i-1] - fee); // sell
+            //cout << f[i][0] << " " << f[i][1] << endl;
+        }
+        return f[prices.size()][1];
+    }
+};
+
+class Solution2 {
+public:
+    #define rep(i,a,b) for (int i = (a); i <= (b); ++i)
+    typedef long long ll;
+    int maxProfit(vector<int>& prices, int fee) {
+        vector<int> a;
+        a.push_back(1e9);
+
+        ll ans = 0;
+        int n = prices.size();
+        rep (i,0,n-1){
+            a.push_back(prices[i]);
+        }
+        a.push_back(0);
+        int l=-1, r;
+
+        rep (i,1,n){
+
+            if (l==-1&&a[i]<=a[i-1]&&a[i]<=a[i+1]){
+                l = i;
+            }
+             if (l != -1 && a[i]>a[i-1]&&a[i]>=a[i+1]){
+                    cout << l << " "<<i <<endl;
+                ans += a[i] - a[l] -fee;
+                l = -1;
+            }
+        }
+        return ans;
+    }
+};
+
+const int N = 10010;
+int ans, n , k, a[N];
+
+
+int main() {
+
+    vector<int> v;
+    cin >> n >> k;
+    rep (i, 1, n){
+        scanf("%d",&a[i]);
+        v.push_back(a[i]);
+    }
+
+    ans = 0;
+    Solution s;
+    ans = s.maxProfit(v, k);
+    cout << ans << endl;
+    return 0;
+}
