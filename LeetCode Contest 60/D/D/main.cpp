@@ -4,7 +4,8 @@
 //
 //  Created by ohazyi on 2017/10/2.
 //  Copyright © 2017年 ohazyi. All rights reserved.
-//
+//  Test:
+//  (let x 2 y (add 0 (let x 500 0)) (add 0 (add 0 (add x 3))))
 
 #include <iostream>
 #include <cstdio>
@@ -63,7 +64,9 @@ public:
         int l = 0, r = 0;
         int n = s.size();
         
-        int i = 5, j;
+        int i = 5;
+        //int j;//!!!wrong!!!不能强制转换，会把一个find出来的大数弄成-1
+        size_t j;
         int type;
         while (true){//一直执行到expr为止
             
@@ -73,7 +76,10 @@ public:
             }
             
             j = s.find(" ",i);
-            if (j == -1 || j > n){//找不到空格 代表是一个单个的标识符名字，即也执行到了expr了
+            if (j == string::npos){
+                //cout << j << "   " << s.find(" ",i) << endl;
+            //if (j!=string::npos){
+            //if (j == -1 || j > n){//找不到空格 代表是一个单个的标识符名字，即也执行到了expr了
                 type = 2;
                 break;
             }
@@ -449,6 +455,7 @@ int ans, n , k, a[N];
 
 int main() {
     
+    cout << string::npos << endl;
 //    string str;
 //    str = "x123";
 //    cout << str.find(" ",1);
@@ -458,7 +465,7 @@ int main() {
     getline(cin, str);
 
     ans = 0;
-    Solution4 s;
+    Solution s;
     ans = s.evaluate(str);
     cout << ans << endl;
     

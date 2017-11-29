@@ -222,3 +222,34 @@ public:
 ```
 
 
+
+最后指出一个在写这个代码发现的一个一直以来存在隐患的坏习惯，就是对于string或者vector类似的东西，当我需要一个变量的时候，我常常会用int来代替size_type
+
+
+
+比如，
+
+```
+string s;
+pos = s.find(" ",5); //从字符串s第五位开始的地方寻找空格，返回下标。如果找不到就是该字符串npos(一个大数，不同的机器可能值不同)
+if (s.find(" ",i) == string::npos){
+    cout << “pos=” << pos << "  s.find(...) " << s.find(" ",i) << endl;
+}
+```
+
+如果这个j用的是int定义的，那么输出的结果可能是“pos=-1  s.find(...)=18446744073709551615” 问题就是这个pos的定义变量的类型出的，将一个64位整数转32位的int转换失败就成了-1（我觉得相当于符号位就是1？）其实这种写法在一般的编译器就会报warning了，例如xcode显示如下：
+
+![](Xcode_cut.jpg)
+
+因此，我们应当用的类型是一个标准的类型，可以的写法如下：
+
+* string::size_type pos
+* size_t pos
+* unsigned long long pos
+
+其中附上一段size_type的介绍：
+
+> size_type由string类类型和vector类类型定义的类型，用以保存任意string对象或vector对象的长度，标准库类型将size_type定义为unsigned类型。
+
+这样就不会出现find出来的结果是-1了。因此说该用标准类型就用标准类型，别都用int省事，不清楚什么类型就用auto就好了，c++11的这个功能很方便。
+
