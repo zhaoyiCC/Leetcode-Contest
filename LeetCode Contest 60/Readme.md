@@ -1,6 +1,6 @@
 # Leetcode-Contest-60
     
-[题目传送门](https://leetcode.com/contest/leetcode-weekly-contest-60/)
+[题目传送门](https://leetcode.com/contest/weekly-contest-60/)
 
 非常不错的一次contest! 除了第二题我觉得题意有点含糊没有说清让人容易误解外，整套题目的质量很高。
 

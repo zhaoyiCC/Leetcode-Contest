@@ -1,8 +1,8 @@
 //
 //  main.cpp
-//  B
+//  D
 //
-//  Created by ohazyi on 2017/10/1.
+//  Created by ohazyi on 2017/10/15.
 //  Copyright © 2017年 ohazyi. All rights reserved.
 //
 
@@ -19,48 +19,70 @@
 #include <queue>
 
 typedef long long ll;
-
+#define rep(i,a,b) for (int i = (a); i <= (b); ++i)
 #define rep2(i,a,b) for (int i = (a); i >= (b); --i)
 
 using namespace std;
 
-const int N = 10010;
-int ans, n , m, k, a[N];
-
-class Solution {
-public:
-#define rep(i,a,b) for (int i = (a); i <= (b); ++i)
-    vector<int> a;
-    int k;
-    double minmaxGasDist(vector<int>& stations, int K) {
-        double ans = 0, l, r, mid;
-        a = stations;
-        k = K;
-        int n =(int)a.size();
-        l = 0;
-        r = a[n-1]-a[0];
-        int tot;
-        while (r-l>=1e-6){
-            tot = 0;
-            mid = (l+r)/2.0;
-            rep (i,0,n-2){
-                tot += 1.0*(a[i+1]-a[i])/mid;
-            }
-            if (tot <= k){
-                r = mid;
-            }else{
-                l = mid;
-            }
+const int N = 300100;
+const int M = 27;
+vector<int> v[N];
+int ans, n , m, x, a[N], b[N];
+bool vis[N];
+char c[N];
+int f[N][M];
+int color[N];
+void dfs(int k){
+    if (vis[k])
+        return ;
+    int h;
+    color[k] = -1;
+    for (auto i: v[k]){
+        if (color[i] == -1){
+            cout << -1 << endl;
+            exit(0);
         }
-        return l;
+        if (!vis[i]){
+            dfs(i);
+        }
+    
+        rep (j,0,25){
+//            if (c[i]-'a' == j)
+//                h = 1;
+//            else
+//                h = 0;
+            if (f[i][j] >= f[k][j])
+                f[k][j] = f[i][j];
+        }
     }
-};
-
-int main(){
-    vector<int> v={1,2,3,4,5,6,7,8,9,10};
+    f[k][c[k]-'a']++;
+    vis[k] = true;
+    color[k] = 1;
+}
+int main() {
+    cin >> n >> m;
+    rep (i,1,n){
+        cin >> c[i];
+    }
+    rep (i,1,m){
+        cin >> a[i] >> b[i];
+        v[a[i]].push_back(b[i]);
+    }
+    memset(vis,false,sizeof(vis));
+    memset(color,0,sizeof(color));
+    rep (i,1,n){
+        if (!vis[i]){
+            dfs(i);
+        }
+    }
+    
     ans = 0;
-    Solution s;
-    int k = 9;
-    cout << s.minmaxGasDist(v, k);
+    rep (i,1,n){
+        rep (j,0,25){
+            if (f[i][j] > ans)
+                ans = f[i][j];
+        }
+    }
+    cout << ans << endl;
     return 0;
 }

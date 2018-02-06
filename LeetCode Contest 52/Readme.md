@@ -1,6 +1,6 @@
 # Leetcode-Contest-52
     
-[题目传送门](https://leetcode.com/contest/leetcode-weekly-contest-52/)
+[题目传送门](https://leetcode.com/contest/weekly-contest-52/)
 
 当场做的，只过了第一题和第三题，最后将近50分钟都没磕出B。果然还是得学习一个树上递归处理的问题吧。第一题脑残还多交了3发，主要是第一次错的时候没有看图啊，其实看了的话直接写个判断就行了啊，算是LeetCode的题目比CF的题数据容易的一个地方吧。最后发现名次和上次差不多，稍微涨了一点rating有点意外。虽然也没听说LeetCode的rating有啥用，自我满足吧233
 

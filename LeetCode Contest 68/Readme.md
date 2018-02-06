@@ -1,6 +1,6 @@
 # Leetcode-Contest-68
     
-[题目传送门](https://leetcode.com/contest/leetcode-weekly-contest-68/)
+[题目传送门](https://leetcode.com/contest/weekly-contest-68/)
 
 几周没做LeetCode，这周Leetcode把C题拆分成两个部分，第一个部分是比较小的数据，第二个题也就是D题是范围大的数据。原来的D题挪到了E题。所以一开始想的C题的算法有问题我就直接写了一个暴力过了C，当写完B之后D算法想出来了却没来得及写，有点亏了。应该是直接想出C和D的标解，因为LeetCode的题比GCJ简单的多，我们不需要通过先过小数据去发现规律这样的方式。
 

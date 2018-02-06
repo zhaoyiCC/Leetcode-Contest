@@ -1,6 +1,6 @@
 # Leetcode-Contest-69
     
-[题目传送门](https://leetcode.com/contest/leetcode-weekly-contest-69/)
+[题目传送门](https://leetcode.com/contest/weekly-contest-69/)
 
 这周的contest比较容易，都是非常基础的题目，但是自己还是没能ak，略有遗憾。 
 

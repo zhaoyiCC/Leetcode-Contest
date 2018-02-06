@@ -1,6 +1,6 @@
 # Leetcode-Contest-51
     
-[题目传送门](https://leetcode.com/contest/leetcode-weekly-contest-51/)
+[题目传送门](https://leetcode.com/contest/weekly-contest-51/)
 
 当场做的，过了前三题，手速太慢，第二题还WA了4发(现在才知道错一次是有5min的罚时的) 第四题也比较简单，前三题浪费太多时间导致来不及做了。手速还得提高啊orz
 
