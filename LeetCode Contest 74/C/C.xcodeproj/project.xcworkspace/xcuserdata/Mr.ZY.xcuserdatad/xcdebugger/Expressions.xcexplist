@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "Solution::asteroidCollision(std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt;&amp;):main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "*jt">
+            </PersistentString>
+            <PersistentString
+               value = "jt">
+            </PersistentString>
+            <PersistentString
+               value = "it">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Solution::maxChunksToSorted(std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt;&amp;):main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "mi">
+            </PersistentString>
+            <PersistentString
+               value = "mx">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Solution::customSortString(std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;):main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "b[1][0]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Solution::dfs(int):main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "cnt">
+            </PersistentString>
+            <PersistentString
+               value = "b">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
