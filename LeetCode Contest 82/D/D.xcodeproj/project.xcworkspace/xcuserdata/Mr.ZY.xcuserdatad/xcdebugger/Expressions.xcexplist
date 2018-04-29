@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "Solution::dfs(int, int):main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "m">
+            </PersistentString>
+            <PersistentString
+               value = "pmx">
+            </PersistentString>
+            <PersistentString
+               value = "a">
+            </PersistentString>
+            <PersistentString
+               value = "a[0][1]">
+            </PersistentString>
+            <PersistentString
+               value = "f[x][y]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Solution::multExpression(std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;&amp;, int):main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "mp[1][&quot;x&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Solution::maxSumOfThreeSubarrays(std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt;&amp;, int):main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "fr[i]">
+            </PersistentString>
+            <PersistentString
+               value = "i">
+            </PersistentString>
+            <PersistentString
+               value = "fl[i]">
+            </PersistentString>
+            <PersistentString
+               value = "l[3]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Solution::getValue(std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;&amp;, int):main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "mp[i][s]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Solution::letExpression(std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;&amp;, int):main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "s[i]">
+            </PersistentString>
+            <PersistentString
+               value = "mp[1][&quot;a&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Solution::numTilings(long long):main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "f[i]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
